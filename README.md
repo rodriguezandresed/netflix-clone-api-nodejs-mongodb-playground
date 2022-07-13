@@ -1,3 +1,5 @@
+# Express + MongoDb(MongoAtlas)
+
 To start this project you need to install the npm requirements using "npm install"
 
 Create a .env environement for your MONGO_URL url from mongoDB and SECRET_KEY for the encription
