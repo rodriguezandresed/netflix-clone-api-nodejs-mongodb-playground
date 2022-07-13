@@ -1,12 +1,46 @@
-To start this project you need to install the npm requirements using "npm install"
+# Netflix Express api clone with MongoDb
 
-Create a .env environement for your MONGO_URL url from mongoDB and SECRET_KEY for the encription
+To start this project you need to install the node dependencies using:
 
-To start this project use the command "npm start"
+```bash
+npm install
 
-It brings 4 endpoints 
+```
 
-Auth: (register and login of user)
+Create a .env file for your MONGO_URL url from mongoDB and SECRET_KEY for the encription. You can get started by:
+
+```
+cp .env.example .env
+```
+
+To run the nodemon development server use:
+
+```
+npm start
+```
+
+## Endpoints
+
+### **Auth**
+
+*Post*
+> /auth/register
+
+```js
+request: {
+  body: {
+    "username": "string", //
+    "email": "string",
+    "password": "string",
+  }
+}
+response: {
+  user: {
+    "username",
+    "email",
+  }
+}
+```
 
 User: (update, delete, show specific and all users)
 
